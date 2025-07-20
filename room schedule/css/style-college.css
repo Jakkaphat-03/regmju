@@ -1,0 +1,151 @@
+/* Prompt */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    font-family: 'Prompt',sans-serif;
+}
+
+/* box ดัน .sidebar และ table */
+.box{
+    background-color: #ffffff;
+    height:120px;
+}
+
+.container{
+    display:flex;
+    justify-items:flex-start;
+    justify-content: start;
+    gap: 50px;
+    /* background-color: rgb(146, 142, 142); */
+        & .box2{
+            background-color: #ffffff;
+            width: 20px;
+        }
+        & .sidebar{
+            position: relative;
+            top: 50px;
+            padding: 20px;
+            width:290px;
+            height: 350px;
+            background-color:#aabba8;
+            white-space:nowrap;
+            font-size: 18px;
+            border-radius: 10px;
+
+
+            & .menu{
+                position: relative;
+                list-style: none;
+                justify-items: center;
+                top: -20px;
+                height: 300px;
+
+                & .back{
+                    position: relative;
+                    color: rgb(255, 255, 255);
+                    width: 80px;
+                    height: 30px;
+                    border-radius: 6px;
+                    text-align: center;
+                    background-color: rgb(5, 107, 27);
+                }
+            }
+            
+            .sidebar h2 {
+                color: #fbfbfb;
+                font-size: 20px;
+                margin-bottom: 10px;
+                padding:10px;
+            }
+            &.sidebar a{
+
+                display: block;
+                color: white;
+                
+                text-decoration: none;
+                margin: 10px 0;
+                padding: 8px;
+                border-radius: 4px;
+            }
+
+            &.sidebar a:hover {
+                background-color: #31865b;
+            }
+            
+        }
+
+        
+        & .box3{
+
+            background-color: #686565;
+            width:5px;
+            height:1200px;
+        }
+
+        & .box_table{
+            background-color: #ffffff;
+            width:70%;
+            white-space:nowrap;
+            display: block;
+            
+
+            & .name_table{
+                background-color: #ffffff;
+
+            } 
+
+            table {
+            background-color: #ffffff;
+            /* border-collapse: collapse; */
+            width: 100%;
+           
+            & tbody a{
+                    text-align: center;
+                    text-decoration:none;
+                    display: block;
+                    padding:5px;
+                    border-radius: 1px;
+                    color: black;
+                    
+
+                }
+            
+            & tbody a:hover {
+                background-color: #d5d7d9;
+            }
+            th, td {
+                    padding: 8px 12px;
+                    border: 1px solid #989494;
+                    
+                    }
+
+                    /* th {
+                    background-color: #b17373;
+                    
+                    } */
+                    
+                    h2 {
+                    margin-top: 40px;
+                    } 
+            
+            } 
+            footer{
+            background-color: #ffffff;
+            width: 100%px;
+            height:300px;
+            }     
+        }
+    }
+
+    .menu li{
+        margin: 20px 0px;
+        border-radius: 10px;
+    }
+
+.name_table h1{
+    color: #447504;
+}
+
+.name_table h2{
+    color: #e6b206;
+}

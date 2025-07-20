@@ -1,0 +1,32 @@
+
+@media screen and (max-width: 450px) {
+    .logo img{
+        position: relative;
+        left:-20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .box-menu {
+        width: 150px;
+        height: 1000px;
+        top: 70px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .box-list {
+        left: 10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .system-menu i{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .container-right-content{
+        left: 171px;
+    }
+}

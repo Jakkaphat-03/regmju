@@ -1,0 +1,299 @@
+/* Sarabun */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* Archivo Black */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Prompt */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Sarabun', sans-serif;
+}
+
+body {
+  background: #fcfef3 url('https://i.imgur.com/dAfBdHM.png') no-repeat center center;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+  padding: 0;
+}
+
+/* ========== START: NAVBAR ========== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0 30px;
+    position: relative;
+    height:100px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    
+
+    /* ให้ลอยอยู่หน้าสุด */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;       
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    display: block;
+    width: 400px;
+}
+.text-section {
+    text-align:start;
+    margin: 0 10px;
+    color: rgb(0, 0, 0);
+    font-family: 'Sarabun', sans-serif;
+}
+.text-section h4,.text-section h3 {
+    margin: 0;
+    line-height: 1.2;
+}
+.divider {
+    line-height:0.9;
+    color: rgb(88, 87, 87);
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.menu-items {
+  list-style: none;
+  display: flex;
+  justify-content: space-between; /* หรือใช้ space-evenly ก็ได้ */
+  padding: 0;
+  margin: 0 auto;
+  max-width: 100rem; /* ปรับความกว้างของเมนูได้ตามต้องการ */
+  font-family: 'Sarabun', sans-serif;
+}
+
+.menu-items .login-button a {
+  background-color: #076607; /* สีเขียว */
+  color: rgb(255, 255, 255);
+  border-radius: 5px;   
+  padding: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-items .login-button a:hover {
+    background-color: #ddbe0b; /* สีเขียวเข้มเมื่อ hover */
+}
+
+.menu-items li {
+    margin-left: 250px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.menu-items li a {
+    text-decoration: none;
+}
+
+.menu-items a {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-decoration: none;
+    /* padding: 100px; */
+}
+
+/* ไอคอนเมนู (3 ขีด) */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* ========== END: NAVBAR ========== */
+
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: transparent;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 120px 30px 30px;
+  min-height: calc(100vh - 100px);
+  box-sizing: border-box;
+}
+
+.info-box {
+  background: #91a58f;
+  padding: 30px;
+  border-radius: 15px;
+  width: 280px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.info-box h3 {
+  margin-bottom: 15px;
+}
+
+.info-box p {
+  width: 200px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+  width: 260px;
+}
+
+.schedule-box {
+  flex: 1;
+  background: rgba(20, 40, 20, 0.5);
+  border-radius: 15px;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.schedule {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.schedule th, .schedule td {
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 12px 8px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  background-color: rgba(100,120,100,0.2);
+}
+
+.schedule th {
+  background-color: rgba(255,255,255,0.2);
+  font-weight: bold;
+}
+
+.subject {
+  background-color: #ab9f3d;
+  font-weight: bold;
+  color: #fff;
+  font-size: 12px;
+}
+
+.back-button {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+}
+
+.back-button button {
+  background-color: #076607;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 30px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+}
+
+.back-button button:hover {
+  background-color: #ddbe0b;
+}
+
+.subject.web {
+  background-color: #017479;
+}
+.subject.datastruct {
+  background-color: #2d6941;
+}
+.subject.software {
+  background-color: #197355;
+}
+.subject.math {
+  background-color: #014d79;
+}
+.subject.english {
+  background-color: #382d69;
+}
+.subject.database {
+  background-color: #5f4478;
+}
+
+.university-text {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  line-height: 1.1;
+}
+
+.university-text .thai {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.university-text .eng {
+  font-size: 14px;
+  color: #555;
+}
+
+.maejo {
+  color: #006633;
+  font-weight: 700;
+}
+
+.univ {
+  color: #000000;
+}
+
+.logout-button a {
+  background-color: #076607; /* เขียว */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button a:hover {
+  background-color: #ddbe0b; /* เขียวเข้มเวลา hover */
+}
+
+.th-en {
+    position: absolute;
+    right: 10px;
+    bottom: 75px;
+    color: #000;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 15px;
+}
+
+.th-en a {
+    text-decoration: none;
+    color: #000
+}
+
+@media screen and (max-width: 850px) {
+  .th-en {
+    display: none;
+  }
+}
+
+.info-box i{
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.932);
+}

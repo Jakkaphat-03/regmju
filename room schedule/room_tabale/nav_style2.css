@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* nav บน */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0 60px;
+    position: relative;
+    height:100px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    
+
+    /* ให้ลอยอยู่หน้าสุด */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;       
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    display: block;
+}
+.text-section {
+    text-align:start;
+    margin: 0 10px;
+    color: rgb(0, 0, 0);
+}
+.text-section h4,
+.text-section h3 {
+    margin: 0;
+    line-height: 1.2;
+}
+.divider {
+    line-height:0.1;
+    color: rgb(88, 87, 87);
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.menu-items {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.menu-items li {
+    margin-left: 20px;
+}
+
+.logout{
+    color: red;   
+}
+
+.logout:hover{
+        background-color:gray;
+        border-radius:1px;
+    }
+
+    
+.menu-items a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu-items a:hover {
+    text-decoration: underline;
+    text-decoration-color:#080606;
+}
+
+/* ไอคอนเมนู (3 ขีด) */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* แสดงเมนูแฮมเบอร์เกอร์ในหน้าจอเล็ก */
+@media (max-width: 8.3in) {
+    .menu-items {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #2c3e50;
+        width: 200px;
+        border-left: 1px solid #444;
+    }
+
+    .menu-items.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}

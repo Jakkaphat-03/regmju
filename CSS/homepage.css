@@ -1,0 +1,436 @@
+/* Sarabun */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* Archivo Black */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Prompt */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 0 30px;
+      position: relative;
+      height:100px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      
+
+      /* ให้ลอยอยู่หน้าสุด */
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;       
+  }
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
+.logo img {
+    display: block;
+    width: 400px;
+}
+.text-section {
+    text-align:start;
+    margin: 0 10px;
+    color: rgb(0, 0, 0);
+    font-family: 'Sarabun', sans-serif;
+}
+.text-section h4,.text-section h3 {
+    margin: 0;
+    line-height: 1.2;
+}
+.divider {
+    line-height:0.9;
+    color: rgb(88, 87, 87);
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.menu-items {
+  list-style: none;
+  display: flex;
+  justify-content: space-between; /* หรือใช้ space-evenly ก็ได้ */
+  padding: 0;
+  margin: 0 auto;
+  max-width: 100rem; /* ปรับความกว้างของเมนูได้ตามต้องการ */
+  font-family: 'Sarabun', sans-serif;
+}
+
+.menu-items .login-button a {
+  background-color: #076607; /* สีเขียว */
+  color: rgb(255, 255, 255);
+  border-radius: 5px;   
+  padding: 8px;
+  transition: background-color 0.3s ease;
+  display: block;
+}
+
+.menu-items .login-button a:hover {
+    background-color: #ddbe0b; /* สีเขียวเข้มเมื่อ hover */
+}
+
+.menu-items li {
+    margin: 0 80px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.menu-items li a {
+    text-decoration: none;
+}
+
+.menu-items a {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* ไอคอนเมนู (3 ขีด) */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* แสดงเมนูแฮมเบอร์เกอร์ในหน้าจอเล็ก */
+@media (max-width: 8.3in) {
+    .menu-items {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #2c3e50;
+        width: 200px;
+        border-left: 1px solid #444;
+    }
+
+    .menu-items.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+.th-en {
+    position: absolute;
+    right: 10px;
+    bottom: 60px;
+    color: #000;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 15px;
+}
+
+.th-en a {
+    text-decoration: none;
+    color: #000
+}
+
+@media screen and (max-width: 850px) {
+  .th-en {
+    display: none;
+  }
+}
+
+.hero-section {
+    margin-top: 350px;
+    margin-left: 200px;
+    color: #000000;
+    font-family: 'Prompt', sans-serif;
+}
+
+.hero-section h1 {
+    display: flex;
+    font-size: 55px;
+    margin: 0;
+    font-weight: 1000;
+    color: #0d440d;
+
+}
+
+.hero-section .content p {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-left: 20px;
+    line-height: 1.5;
+    color: #0f0f0f;
+
+}
+
+
+.slogan-img {
+    display: flex;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -120px;
+    width: 500px;
+    height: auto;
+}
+
+
+body{
+    margin: 0;
+    background: #ffffff;
+    color: white;
+    font-family: sans-serif;
+    align-items: center;
+    min-height: 100vh;
+    /*display: flex;*/
+}
+
+.slider{
+    width: 100%;
+}
+.slider input{
+    display: none;
+}
+.slider .item img {
+  width: 100%;
+  height: auto;
+  max-height: 200px; /* ปรับตามความสูงที่ต้องการให้ภาพไม่เกิน */
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 8px;
+}
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 350px;
+  perspective: 1000px;
+  overflow: hidden;
+}
+
+.testimonials .item {
+  width: 300px;
+  padding: 30px;
+  border-radius: 5px;
+  background: #37383996;
+  position: absolute;
+  border: 3px solid white;
+  top: 0;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.4s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  user-select: none;
+  cursor: pointer;
+  
+}
+
+.testimonials .item h1 {
+  font-size: 114px;
+  color: white;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots label {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #413b52;
+  margin: 7px;
+  transition-duration: 0.2s;
+}
+
+#t-1:checked ~ .dots label[for="t-1"],
+#t-2:checked ~ .dots label[for="t-2"],
+#t-3:checked ~ .dots label[for="t-3"],
+#t-4:checked ~ .dots label[for="t-4"],
+#t-5:checked ~ .dots label[for="t-5"],
+#s-1:checked ~ .dots label[for="s-1"],
+#s-2:checked ~ .dots label[for="s-2"],
+#s-3:checked ~ .dots label[for="s-3"],
+#s-4:checked ~ .dots label[for="s-4"],
+#s-5:checked ~ .dots label[for="s-5"] {
+  background-color: #1ce573;
+  transform: scale(2);
+  box-shadow: 0px 0px 0px 3px #dddddd24;
+}
+
+#t-1:checked ~ .dots label[for="t-2"],
+#t-2:checked ~ .dots label[for="t-1"],
+#t-2:checked ~ .dots label[for="t-3"],
+#t-3:checked ~ .dots label[for="t-2"],
+#t-3:checked ~ .dots label[for="t-4"],
+#t-4:checked ~ .dots label[for="t-3"],
+#t-4:checked ~ .dots label[for="t-5"],
+#t-5:checked ~ .dots label[for="t-4"],
+#s-1:checked ~ .dots label[for="s-2"],
+#s-2:checked ~ .dots label[for="s-1"],
+#s-2:checked ~ .dots label[for="s-3"],
+#s-3:checked ~ .dots label[for="s-2"],
+#s-3:checked ~ .dots label[for="s-4"],
+#s-4:checked ~ .dots label[for="s-3"],
+#s-4:checked ~ .dots label[for="s-5"],
+#s-5:checked ~ .dots label[for="s-4"]  {
+  transform: scale(1.5);
+}
+
+/*1*/
+#t-3:checked ~ .testimonials label[for="t-1"],
+#t-4:checked ~ .testimonials label[for="t-2"],
+#t-5:checked ~ .testimonials label[for="t-3"],
+#t-2:checked ~ .testimonials label[for="t-5"],
+#t-1:checked ~ .testimonials label[for="t-4"],
+#s-3:checked ~ .testimonials label[for="s-1"],
+#s-4:checked ~ .testimonials label[for="s-2"],
+#s-5:checked ~ .testimonials label[for="s-3"],
+#s-2:checked ~ .testimonials label[for="s-5"],
+#s-1:checked ~ .testimonials label[for="s-4"] {
+  transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+  z-index: 2;
+}
+/*2*/
+#t-2:checked ~ .testimonials label[for="t-1"],
+#t-3:checked ~ .testimonials label[for="t-2"],
+#t-4:checked ~ .testimonials label[for="t-3"],
+#t-5:checked ~ .testimonials label[for="t-4"],
+#t-1:checked ~ .testimonials label[for="t-5"],
+#s-2:checked ~ .testimonials label[for="s-1"],
+#s-3:checked ~ .testimonials label[for="s-2"],
+#s-4:checked ~ .testimonials label[for="s-3"],
+#s-5:checked ~ .testimonials label[for="s-4"],
+#s-1:checked ~ .testimonials label[for="s-5"] {
+  transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+  z-index: 3;
+}
+/*3*/
+#t-3:checked ~ .testimonials label[for="t-1"],
+#t-4:checked ~ .testimonials label[for="t-2"],
+#t-5:checked ~ .testimonials label[for="t-3"],
+#t-2:checked ~ .testimonials label[for="t-5"],
+#t-1:checked ~ .testimonials label[for="t-4"],
+#s-3:checked ~ .testimonials label[for="s-1"],
+#s-4:checked ~ .testimonials label[for="s-2"],
+#s-5:checked ~ .testimonials label[for="s-3"],
+#s-2:checked ~ .testimonials label[for="s-5"],
+#s-1:checked ~ .testimonials label[for="s-4"] {
+  z-index: 0;
+}
+/*4*/
+#t-1:checked ~ .testimonials label[for="t-2"],
+#t-2:checked ~ .testimonials label[for="t-3"],
+#t-3:checked ~ .testimonials label[for="t-4"],
+#t-4:checked ~ .testimonials label[for="t-5"],
+#t-5:checked ~ .testimonials label[for="t-1"],
+#s-1:checked ~ .testimonials label[for="s-2"],
+#s-2:checked ~ .testimonials label[for="s-3"],
+#s-3:checked ~ .testimonials label[for="s-4"],
+#s-4:checked ~ .testimonials label[for="s-5"],
+#s-5:checked ~ .testimonials label[for="s-1"] {
+  transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+  z-index: 3;
+}
+/*5*/
+#t-1:checked ~ .testimonials label[for="t-3"],
+#t-2:checked ~ .testimonials label[for="t-4"],
+#t-3:checked ~ .testimonials label[for="t-5"],
+#t-4:checked ~ .testimonials label[for="t-1"],
+#t-5:checked ~ .testimonials label[for="t-2"],
+#s-1:checked ~ .testimonials label[for="s-3"],
+#s-2:checked ~ .testimonials label[for="s-4"],
+#s-3:checked ~ .testimonials label[for="s-5"],
+#s-4:checked ~ .testimonials label[for="s-1"],
+#s-5:checked ~ .testimonials label[for="s-2"] {
+  transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+  z-index: 2;
+}
+
+.banner-slider-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+  top:50px;
+  margin: 40px 0px;
+  position: relative;
+  flex-wrap: wrap; /* ทำให้ responsive */
+}
+
+.banner-slider-container .image-wrapper img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.banner-slider-container .slider {
+  flex: 1;
+  min-width: 320px;
+}
+
+/* From Uiverse.io by AqFox */ 
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  font-size: 15px;
+}
+
+.btn-2 {
+  background: #04750a;
+  background: linear-gradient(0deg, #094903 0%, #027c35 100%);
+  border: none;
+}
+
+.btn-2:before {
+  height: 0%;
+  width: 2px;
+}
+
+.btn-2:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+@media (max-width: 450px) {
+  .login-mb{
+    position: relative;
+    top:110px;
+    width: 100px;
+    height: 40px;
+    left: 310px;
+    background-color: #076607;
+    border-radius: 10px;
+  }
+} 
+
+@media (max-width: 450px) {
+  .login-mb a{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    left: 5px;
+  }
+} 

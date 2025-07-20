@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ตารางเรียน MAEJO</title>
+
+  <!-- icon -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="../CSS/tablestyle.css">
+</head>
+
+<body>
+
+  <!-- Navbar ใหม่ -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../img/mju_logo.png" alt="โลโก้แม่โจ้">
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <ul class="menu-items" id="menu">
+      <li><a href="#">หน้าแรก</a></li>
+      <li><a href="#">ข่าวสาร</a></li>
+      <li><a href="#">ติดต่อเรา</a></li>
+      <li class="logout-button"><a href="login.html">ออกจากระบบ</a></li>
+    </ul>
+
+    <div class="th-en">
+      <p><a href="#">TH/EN</a></p>
+  </nav>
+
+  <!-- Background Overlay -->
+  <div class="background-overlay"></div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <div class="info-box">
+      <h3>ตารางเรียน</h3>
+      <p><strong><i class='bx bx-user'> ชื่อ-นามสกุล</i></strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: จักรภัทร ชาบัญ</p>
+      <p><strong><i class='bx bxs-user-check'> สถานภาพ</i></strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: กำลังศึกษา</p>
+      <p><strong><i class='bx bxs-school'> คณะ</i></strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: วิทยาศาสตร์</p>
+      <p><strong><i class='bx bx-briefcase-alt-2'> สาขาวิชา</i></strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: วิทยาการคอมพิวเตอร์</p>
+      <p><strong><i class='bx bx-user-pin' > อ.ที่ปรึกษา</i></strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: อ.ดร.กิตติกร หาญตระกูล</p>
+      <p><strong><i class='bx bx-notepad'> ปีการศึกษา</i></strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 2568 / 1</p>
+    </div>
+
+    <div class="schedule-box">
+      <table class="schedule">
+        <thead>
+          <tr>
+            <th>วัน</th>
+            <th>8:00-9:00</th>
+            <th>9:00-10:00</th>
+            <th>10:00-11:00</th>
+            <th>11:00-12:00</th>
+            <th>12:00-13:00</th>
+            <th>13:00-14:00</th>
+            <th>14:00-15:00</th>
+            <th>15:00-16:00</th>
+            <th>16:00-17:00</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>จันทร์</td>
+            <td></td>
+            <td colspan="3" class="subject web">10301231<br>เว็บเทคโนโลยี<br>Labcom 3-4</td>
+            <td></td>
+            <td colspan="2" class="subject datastruct">10301222<br>โครงสร้างข้อมูล<br>Labcom 3-4</td>
+            <td colspan="2" class="subject english">10700313 กลุ่ม 1<br>อังกฤษเชิงวิชาการ<br>80-306</td>
+          </tr>
+          <tr>
+            <td>อังคาร</td>
+            <td colspan="2" class="subject web">10301231<br>เว็บเทคโนโลยี<br>Labcom 3-4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="subject software">10301225<br>วิศวกรรมซอฟต์แวร์<br>Labcom 3-4</td>
+            <td colspan="2" class="subject math">10301211<br>คณิตคอม<br>จุฬา 3203</td>
+          </tr>
+          <tr>
+            <td>พุธ</td>
+            <td></td>
+            <td colspan="3" class="subject software">10301225<br>วิศวกรรมซอฟต์แวร์<br>จุฬา 3203</td>
+            <td colspan="5"></td>
+          </tr>
+          <tr>
+            <td>พฤหัสบดี</td>
+            <td></td>
+            <td colspan="3" class="subject datastruct">10301222<br>โครงสร้างข้อมูล<br>Labcom 3-4</td>
+            <td></td>
+            <td colspan="2" class="subject database">10301223<br>ฐานข้อมูลเชิงสัมพันธ์<br>Labcom 3-4</td>
+            <td colspan="2" class="subject english">10700313 กลุ่ม 1<br>อังกฤษเชิงวิชาการ<br>80-306</td>
+          </tr>
+          <tr>
+            <td>ศุกร์</td>
+            <td></td>
+            <td colspan="1" class="subject math">10301211<br>คณิตคอม<br>จุฬา 3203</td>
+            <td colspan="3"></td>
+            <td colspan="3" class="subject database">10301223<br>ฐานข้อมูลเชิงสัมพันธ์<br>Labcom 3-4</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Back Button -->
+  <div class="back-button">
+    <button onclick="history.back()">⟵</button>
+  </div>
+
+  <!-- Optional: Toggle script -->
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      document.getElementById('menu').classList.toggle('show');
+    });
+  </script>
+</body>
+
+</html>
