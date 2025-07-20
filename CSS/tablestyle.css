@@ -14,7 +14,7 @@
 }
 
 body {
-  background: #fcfef3 url('https://i.imgur.com/dAfBdHM.png') no-repeat center center;
+  background: #fcfef3;
   background-size: cover;
   color: white;
   min-height: 100vh;
